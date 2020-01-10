@@ -1,0 +1,82 @@
+body {
+  color: #a3a3a3;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cm-table-top-border {
+  height: 15px;
+}
+
+.tablescroll thead,
+.cm-table-top-border,
+.cm-table thead {
+  border-bottom: 1px solid #e7e7e7;
+  box-shadow: 0px 8px 6px -6px #e7e7e7;
+}
+
+.cm-table tbody tr:hover {
+  background: linear-gradient(to bottom, rgba(224, 224, 224, 0.8) 0%, rgba(243, 243, 243, 0.8) 20%, rgba(243, 243, 243, 0.8) 80%, rgba(213, 213, 213, 0.8) 100%);
+}
+
+.cm-table-container {
+  max-height: 100vh;
+}
+
+.tablescroll th,
+.cm-table thead th {
+  padding: 10px 6px 8px;
+  text-align: center;
+  color: #727272;
+}
+
+.cm-table tbody tr td {
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.cm-table tbody td {
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.cm-table tbody td:nth-child(even) {
+  background: rgba(239, 239, 239, 0.6);
+}
+.cm-table tbody td:nth-child(3) {
+  text-align: left !important;
+}
+
+.doc-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='20px' height='20px'%3E%3Cpath fill='%23fff' d='M5.5 27.5L5.5 2.5 18.793 2.5 24.5 8.207 24.5 27.5z'/%3E%3Cpath fill='%23788b9c' d='M18.586,3L24,8.414V27H6V3H18.586 M19,2H5v26h20V8L19,2L19,2z'/%3E%3Cpath fill='%23fff' d='M18.5 8.5L18.5 2.5 18.793 2.5 24.5 8.207 24.5 8.5z'/%3E%3Cpath fill='%23788b9c' d='M19 3.414L23.586 8H19V3.414M19 2h-1v7h7V8L19 2 19 2zM9 12H21V13H9zM9 15H19V16H9zM9 18H21V19H9zM9 21H19V22H9z'/%3E%3C/svg%3E");
+}
+
+.cm-table tbody tr:hover .doc-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%0A%3Csvg fill='%23939393' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' width='18px' height='18px'%3E%3Cpath d='M 46.574219 3.425781 C 45.625 2.476563 44.378906 2 43.132813 2 C 41.886719 2 40.640625 2.476563 39.691406 3.425781 C 39.691406 3.425781 39.621094 3.492188 39.53125 3.585938 C 39.523438 3.59375 39.511719 3.597656 39.503906 3.605469 L 4.300781 38.804688 C 4.179688 38.929688 4.089844 39.082031 4.042969 39.253906 L 2.035156 46.742188 C 1.941406 47.085938 2.039063 47.453125 2.292969 47.707031 C 2.484375 47.898438 2.738281 48 3 48 C 3.085938 48 3.171875 47.988281 3.257813 47.964844 L 10.746094 45.957031 C 10.917969 45.910156 11.070313 45.820313 11.195313 45.695313 L 46.394531 10.5 C 46.40625 10.488281 46.410156 10.472656 46.417969 10.460938 C 46.507813 10.371094 46.570313 10.308594 46.570313 10.308594 C 48.476563 8.40625 48.476563 5.324219 46.574219 3.425781 Z M 45.160156 4.839844 C 46.277344 5.957031 46.277344 7.777344 45.160156 8.894531 C 44.828125 9.222656 44.546875 9.507813 44.304688 9.75 L 40.25 5.695313 C 40.710938 5.234375 41.105469 4.839844 41.105469 4.839844 C 41.644531 4.296875 42.367188 4 43.132813 4 C 43.898438 4 44.617188 4.300781 45.160156 4.839844 Z M 5.605469 41.152344 L 8.847656 44.394531 L 4.414063 45.585938 Z'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%0A%3C%3Fxml version='1.0'%3F%3E%3Csvg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='20px' height='20px'%3E%3Cpath d='M 22.828125 3 C 22.316375 3 21.804562 3.1954375 21.414062 3.5859375 L 19 6 L 24 11 L 26.414062 8.5859375 C 27.195062 7.8049375 27.195062 6.5388125 26.414062 5.7578125 L 24.242188 3.5859375 C 23.851688 3.1954375 23.339875 3 22.828125 3 z M 17 8 L 5.2597656 19.740234 C 5.2597656 19.740234 6.1775313 19.658 6.5195312 20 C 6.8615312 20.342 6.58 22.58 7 23 C 7.42 23.42 9.6438906 23.124359 9.9628906 23.443359 C 10.281891 23.762359 10.259766 24.740234 10.259766 24.740234 L 22 13 L 17 8 z M 4 23 L 3.0566406 25.671875 A 1 1 0 0 0 3 26 A 1 1 0 0 0 4 27 A 1 1 0 0 0 4.328125 26.943359 A 1 1 0 0 0 4.3378906 26.939453 L 4.3632812 26.931641 A 1 1 0 0 0 4.3691406 26.927734 L 7 26 L 5.5 24.5 L 4 23 z'/%3E%3C/svg%3E"); */
+}
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+  background: rgba(210, 210, 210, 0.6) !important;
+}
